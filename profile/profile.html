@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+    <div id="page_cover">
+     <div id="profile_box">
+       
+       <div id="profile_pic">
+        <i class="fas fa-user" id="profile_icon"></i>
+        <input type="file" id="profile_upload" accept="image/*">
+       </div>
+       <p id="upp"> Upload profile picture</p>
+       <h1 id="profile_name"></h1>
+       <button  type="submit" id="next">Next  <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+     </div>
+
+    </div>
+    </div>
+    
+
+
+    <div id="main_profile_page" >
+        
+        <div id="profile_header">
+
+            <div id="profile_picture">
+
+            </div>
+        </div>
+        <h1 id="profile_username"></h1>
+        <div id="app">
+
+
+            <a href="app/contact/contact.html">
+            <div id="contact">
+                <i class="fas fa-address-book"></i> 
+                <p>Contact</p>
+            </div>
+            </a>
+
+
+            <a href="app/player/player.html">
+                <div id="player">
+                <i class="fas fa-play-circle"></i>
+                <P>Player</P>
+
+            </div>
+            </a>
+
+            <div id="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <p id="logout_text">Logout</p>
+            </div>
+            
+        </div>
+        <div id="profile_footer">
+            <p>Developed By : anuj@</p>
+
+        </div>
+
+    </div>
+    
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

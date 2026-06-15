@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/player.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="left">
+        
+            
+        
+        <video width="100%" id="video_player">
+            <source src="https://downloadstatus.xyz/motivational/Khud-Ko-Kam-Na-Samjho-Motivational-Video-Status.mp4" id="video_src">
+            
+        </video>
+        <div id="progress_box">
+            <div id="progress_bar"></div>
+        </div>
+
+        <div id="control" >
+            <div id="timing">
+                <p id="v_timing"> 
+                    0:0 / 0:0
+                    
+                </p>
+
+            </div>
+
+            <div id="play_tools">
+                <i class="fa-solid fa-angles-left"  id="left_btn" ></i>
+                <i class="fa-solid fa-circle-play" id="play_btn"></i>
+                
+
+                <i class="fa-solid fa-angles-right"  id="right_btn"></i>
+            </div>
+        
+            <div id="other_tools">
+                <div id="vol_box">
+                    <input type="range" min="0" max="1" step="0.01"  id="vol_control" style="display: none">      
+                
+                    <i class="fa-solid fa-volume-high" id="volume"></i>
+                </div>
+
+                <div id="speed_box">
+                    <input type="range" min="0" max="2" step="0.25"  id="speed_control" style="display: none" >      
+                
+                    <i class="fa-solid fa-gauge-high" id="speed_icon"></i>
+                </div>
+
+
+                
+                
+
+                <i class="fa-solid fa-expand" id="full_screen"></i>
+
+            </div>
+        </div>
+
+        
+
+    
+        
+    </div>
+
+
+
+    <div id="right">
+
+        <div id="top">
+            <h3>Playlist</h3>
+
+             <input type="search" placeholder="Search Your Contact Here..." id="search">
+             <i class="fa-solid fa-circle-plus" id="open_video_box_btn"></i>
+             
+             <div id="add_video_box">
+                <h2>Add Videos</h2>
+                <form action="">
+                    <input type="text" id="video_name" placeholder="Enter Your Video Name...">
+                    <input type="text" id="video_link" placeholder="Enter Your Video Link">
+                    <button type="submit" id="add_video_btn">ADD</button>
+                </form>
+
+             </div>
+
+        </div>
+        <div id="bottom">
+            
+        </div>
+        
+
+    </div>
+
+  
+   <script src="js/player.js"></script>
+</body>
+</html>

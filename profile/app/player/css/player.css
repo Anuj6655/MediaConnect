@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+ *{
+    margin :0;
+    padding :0;
+    box-sizing: border-box;
+  }
+
+  #left{
+    width: 75%;
+    height: 100vh;
+    
+    float: left;
+  }
+  #video_player{
+  
+  background-color: #0a0909;        /* fixed box size */
+  
+  }
+ 
+  #right{
+    width: 25%;
+    height: 100vh;
+   
+    float: right;
+
+  }
+  #progress_box{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    border-radius: 5px;
+
+
+  }
+  
+  #progress_bar{
+   
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    background: #3E5151;  
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151); 
+
+  }
+
+  #control{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+
+  }
+  #play_btn {
+    font-size: 40px ;
+    color: rgb(212, 88, 88);
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #left_btn,#right_btn{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  } 
+#play_tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+#v_timing{
+    font-size: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+    color: aliceblue;
+    margin-left: 20px;
+    
+
+}
+#volume,#full_screen,#speed_icon{
+    color: aliceblue;
+    font-size: 26px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+
+div#timing {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+div#other_tools {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+    
+  
+
+#top{
+   width: 100%;
+   height: 17%;
+   background-color: rgb(200, 192, 192);
+   padding: 15px; 
+   position: relative;
+}
+#top h3{
+    font-family: 'Ubuntu' , sans-serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+#search{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: 'Ubuntu' , sans-serif;
+    outline: none;
+    margin-top: 15px;
+}
+
+#open_video_box_btn{
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+}
+#add_video_box{
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px 0px 15px 15px;
+    background-color: #0a0909;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    display: none;
+}
+#add_video_box h2{
+    color: #ccc;
+    font-family: 'Ubuntu' , sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+
+#video_name,#video_link{
+    width: 100%;
+    padding: 8px;
+     font-family: 'Ubuntu' , sans-serif;
+     border: 1px solid #ccc;
+     margin-bottom: 15px;
+}
+
+#add_video_btn{
+  width: 70px;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  
+  
+}
+#bottom{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    
+}
+#main_video_box{
+    width: 100%;
+    background-color: white;
+    height: auto;
+    box-shadow: 0 0 6px #ccc;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 15px 15px;
+}#playlist_video_name{
+    width: 100%;
+    font-family: 'Ubuntu' , sans-serif;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#video_delete_btn{
+     width: 50%;
+    padding: 9px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu' , sans-serif;
+    cursor: pointer;
+    background-color: rgb(226, 107, 107);
+    outline: none;
+    border-radius: 0px 0px 15px 0px;
+
+}
+
+#video_play_btn{
+    width: 50%;
+    padding: 9px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu' , sans-serif;
+    cursor: pointer;
+    background-color: rgb(104, 104, 224);
+    border-radius: 0px 0px 0px 15px;
+
+}
+
+#vol_control,#speed_control {
+  appearance: none;
+  transform: rotate(270deg);
+  outline: none;
+  width: 100px;
+  height: 10px;
+  background-color: rgb(233, 151, 151);
+  border-radius: 5px;
+  position: absolute;   /* ab parent ke andar fix hoga */
+  top: -65px;           /* icon ke upar shift karne ke liye */
+  left: 35%;            /* center align */
+  transform: translateX(-50%) rotate(270deg);
+  z-index: 10;
+           /* overlap ke liye */
+}
+
+#vol_control::-webkit-slider-thumb{
+  appearance: none;
+  width:10px ;
+  height: 10px;
+ background-color: aliceblue;
+ border-radius: 5px;
+ 
+}
+#speed_control::-webkit-slider-thumb{
+  appearance: none;
+  width:10px ;
+  height: 10px;
+ background-color: aliceblue;
+ border-radius: 5px;
+ 
+}
+
+ #vol_box,#speed_box {
+  position: relative;   /* parent ko relative banaya */
+  display: inline-block;
+}
+
+
+
+
+/* responsive coding start  */
+
+@media(max-width: 768px){
+  #left{
+    width: 100%;
+    height: auto;
+
+  }
+  #right{
+    width: 100%;
+  }
+
+  
+
+  }
+  @media(max-width: 428px){
+
+    #volume,#full_screen,#speed_icon{
+    font-size: 20px;
+    margin-right: 15px;
+   }
+   #v_timing {
+    font-size: 15px;
+   }
+
+
+  }
+
+  @media(max-width: 428px){
+    #volume, #full_screen, #speed_icon {
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    #play_btn {
+    font-size: 30px;
+    color: rgb(212, 88, 88);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    #left_btn, #right_btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+#control {
+    width: 100%;
+    height: 55px;
+    
+}
+#progress_box {
+    
+    height: 2px;
+  }
+  #progress_bar {
+    height: 3px;
+  }
+  #vol_control, #speed_control {
+    width: 90px;
+    height: 6px;
+    top: -50px;
+
+  }
+}
+
+
+
+
+
+
+
+
