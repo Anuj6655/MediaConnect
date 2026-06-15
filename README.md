@@ -4,8 +4,9 @@ A complete web application that allows users to **log in, sign up, save contacts
 This project demonstrates how to build a lightweight, offline‑friendly app without external databases.
 
 ---
-## 🎞️ Demo GIF
-![Demo Animation](demo.gif)
+## 🎥 Demo Video
+[![Watch the demo](https://youtu.be/ZXrBfWS1dXY)](https://www.youtube.com/watch?v=<VIDEO_ID>)
+
 
 ---
 
