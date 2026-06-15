@@ -5,7 +5,8 @@ This project demonstrates how to build a lightweight, offline‑friendly app wit
 
 ---
 ## 🎥 Demo Video
-[![Watch the demo](https://youtu.be/ZXrBfWS1dXY)](https://www.youtube.com/watch?v=<VIDEO_ID>)
+
+[![Watch the demo](https://img.youtube.com/vi/DqpRSEo8MLA/0.jpg)](https://www.youtube.com/watch?v=DqpRSEo8MLA)
 
 
 ---
